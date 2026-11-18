@@ -1,0 +1,218 @@
+{
+  "temporal_mean": {
+    "Boosting + market_index + day index as tree features": {
+      "mae": 154.536,
+      "rmse": 643.977,
+      "mape_pct": 6.557,
+      "median_ape_pct": 3.519,
+      "r2": 0.821,
+      "clean_mape_pct": 4.248
+    },
+    "Boosting, load features only": {
+      "mae": 137.892,
+      "rmse": 638.684,
+      "mape_pct": 5.967,
+      "median_ape_pct": 3.037,
+      "r2": 0.824,
+      "clean_mape_pct": 3.659
+    },
+    "FINAL: hybrid, within-day coefficient + linear drift": {
+      "mae": 98.369,
+      "rmse": 626.282,
+      "mape_pct": 4.233,
+      "median_ape_pct": 1.478,
+      "r2": 0.83,
+      "clean_mape_pct": 1.866
+    },
+    "Final with a single fitting round": {
+      "mae": 133.956,
+      "rmse": 634.338,
+      "mape_pct": 5.86,
+      "median_ape_pct": 2.804,
+      "r2": 0.826,
+      "clean_mape_pct": 3.499
+    },
+    "Final without geography features": {
+      "mae": 108.025,
+      "rmse": 628.745,
+      "mape_pct": 4.785,
+      "median_ape_pct": 1.79,
+      "r2": 0.829,
+      "clean_mape_pct": 2.437
+    },
+    "Final without outlier filtering": {
+      "mae": 136.547,
+      "rmse": 632.561,
+      "mape_pct": 5.991,
+      "median_ape_pct": 3.005,
+      "r2": 0.827,
+      "clean_mape_pct": 3.611
+    },
+    "Final without quote_signal": {
+      "mae": 106.603,
+      "rmse": 626.577,
+      "mape_pct": 4.665,
+      "median_ape_pct": 2.043,
+      "r2": 0.83,
+      "clean_mape_pct": 2.276
+    },
+    "Hybrid, pooled market coefficient + linear drift": {
+      "mae": 100.593,
+      "rmse": 626.993,
+      "mape_pct": 4.326,
+      "median_ape_pct": 1.577,
+      "r2": 0.83,
+      "clean_mape_pct": 1.966
+    },
+    "Hybrid, within-day coefficient + capped drift": {
+      "mae": 98.042,
+      "rmse": 627.199,
+      "mape_pct": 4.215,
+      "median_ape_pct": 1.448,
+      "r2": 0.83,
+      "clean_mape_pct": 1.862
+    },
+    "Hybrid, within-day market coefficient, no drift": {
+      "mae": 112.538,
+      "rmse": 631.571,
+      "mape_pct": 4.826,
+      "median_ape_pct": 2.058,
+      "r2": 0.828,
+      "clean_mape_pct": 2.517
+    },
+    "Naive: median $/mile by equipment": {
+      "mae": 219.337,
+      "rmse": 662.572,
+      "mape_pct": 10.535,
+      "median_ape_pct": 6.849,
+      "r2": 0.81,
+      "clean_mape_pct": 8.287
+    }
+  },
+  "primary_fold": {
+    "Naive: median $/mile by equipment": {
+      "mae": 229.097,
+      "rmse": 670.66,
+      "mape_pct": 10.487,
+      "median_ape_pct": 6.801,
+      "r2": 0.807,
+      "clean_mape_pct": 8.071
+    },
+    "Boosting, load features only": {
+      "mae": 110.523,
+      "rmse": 632.25,
+      "mape_pct": 4.947,
+      "median_ape_pct": 1.926,
+      "r2": 0.828,
+      "clean_mape_pct": 2.432
+    },
+    "Boosting + market_index + day index as tree features": {
+      "mae": 132.166,
+      "rmse": 640.102,
+      "mape_pct": 5.726,
+      "median_ape_pct": 2.808,
+      "r2": 0.824,
+      "clean_mape_pct": 3.264
+    },
+    "Hybrid, pooled market coefficient + linear drift": {
+      "mae": 93.773,
+      "rmse": 630.471,
+      "mape_pct": 4.151,
+      "median_ape_pct": 1.372,
+      "r2": 0.829,
+      "clean_mape_pct": 1.645
+    },
+    "Hybrid, within-day market coefficient, no drift": {
+      "mae": 111.797,
+      "rmse": 634.655,
+      "mape_pct": 4.869,
+      "median_ape_pct": 2.284,
+      "r2": 0.827,
+      "clean_mape_pct": 2.411
+    },
+    "Hybrid, within-day coefficient + capped drift": {
+      "mae": 89.974,
+      "rmse": 629.338,
+      "mape_pct": 3.997,
+      "median_ape_pct": 1.222,
+      "r2": 0.83,
+      "clean_mape_pct": 1.479
+    },
+    "FINAL: hybrid, within-day coefficient + linear drift": {
+      "mae": 88.261,
+      "rmse": 628.369,
+      "mape_pct": 3.926,
+      "median_ape_pct": 1.151,
+      "r2": 0.83,
+      "clean_mape_pct": 1.393
+    },
+    "Final without geography features": {
+      "mae": 94.534,
+      "rmse": 629.819,
+      "mape_pct": 4.257,
+      "median_ape_pct": 1.383,
+      "r2": 0.83,
+      "clean_mape_pct": 1.733
+    },
+    "Final without quote_signal": {
+      "mae": 95.173,
+      "rmse": 628.959,
+      "mape_pct": 4.248,
+      "median_ape_pct": 1.402,
+      "r2": 0.83,
+      "clean_mape_pct": 1.706
+    },
+    "Final without outlier filtering": {
+      "mae": 124.927,
+      "rmse": 630.272,
+      "mape_pct": 5.616,
+      "median_ape_pct": 2.625,
+      "r2": 0.829,
+      "clean_mape_pct": 3.04
+    },
+    "Final with a single fitting round": {
+      "mae": 117.506,
+      "rmse": 630.241,
+      "mape_pct": 5.275,
+      "median_ape_pct": 2.256,
+      "r2": 0.829,
+      "clean_mape_pct": 2.717
+    }
+  },
+  "random_kfold_mean": {
+    "Boosting + market_index + day index, random K-fold": {
+      "mae": 105.488,
+      "rmse": 593.67,
+      "mape_pct": 4.816,
+      "median_ape_pct": 1.964,
+      "r2": 0.84,
+      "clean_mape_pct": 2.446
+    },
+    "Final model, random K-fold": {
+      "mae": 85.502,
+      "rmse": 589.701,
+      "mape_pct": 3.889,
+      "median_ape_pct": 1.219,
+      "r2": 0.842,
+      "clean_mape_pct": 1.507
+    }
+  },
+  "unseen_cities": {
+    "With coordinate features | loads on seen cities": {
+      "mape_pct": 3.917,
+      "clean_mape_pct": 1.412
+    },
+    "With coordinate features | loads touching unseen cities": {
+      "mape_pct": 4.261,
+      "clean_mape_pct": 1.631
+    },
+    "Without geography features | loads on seen cities": {
+      "mape_pct": 4.273,
+      "clean_mape_pct": 1.78
+    },
+    "Without geography features | loads touching unseen cities": {
+      "mape_pct": 4.418,
+      "clean_mape_pct": 1.787
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "market_coefficients": {
+    "market_filled": 0.0955924357647988,
+    "t": 0.0001603562805930704
+  },
+  "intercept": -0.1277482685010415,
+  "training_rows": 48000,
+  "training_rows_used_after_outlier_filter": 47322,
+  "outliers_dropped_from_fit": 678,
+  "robust_residual_sigma_log": 0.01650434139836969,
+  "december_quote_signal_used": 2.055065,
+  "prediction_summary": {
+    "count": 12000.0,
+    "mean": 2385.15,
+    "std": 1382.77,
+    "min": 203.64,
+    "25%": 1280.31,
+    "50%": 2054.04,
+    "75%": 3398.49,
+    "max": 6856.34
+  },
+  "december_summary": {
+    "count": 31.0,
+    "mean": 830.7,
+    "std": 5.93,
+    "min": 820.85,
+    "25%": 826.0,
+    "50%": 830.57,
+    "75%": 835.81,
+    "max": 840.69
+  }
+}

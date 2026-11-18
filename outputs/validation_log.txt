@@ -1,0 +1,44 @@
+
+Mean across the three forward-chaining folds
+                                                        mae     rmse  mape_pct  median_ape_pct     r2  clean_mape_pct
+model                                                                                                                
+Hybrid, within-day coefficient + capped drift        98.042  627.199     4.215           1.448  0.830           1.862
+FINAL: hybrid, within-day coefficient + linear ...   98.369  626.282     4.233           1.478  0.830           1.866
+Hybrid, pooled market coefficient + linear drift    100.593  626.993     4.326           1.577  0.830           1.966
+Final without quote_signal                          106.603  626.577     4.665           2.043  0.830           2.276
+Final without geography features                    108.025  628.745     4.785           1.790  0.829           2.437
+Hybrid, within-day market coefficient, no drift     112.538  631.571     4.826           2.058  0.828           2.517
+Final with a single fitting round                   133.956  634.338     5.860           2.804  0.826           3.499
+Final without outlier filtering                     136.547  632.561     5.991           3.005  0.827           3.611
+Boosting, load features only                        137.892  638.684     5.967           3.037  0.824           3.659
+Boosting + market_index + day index as tree fea...  154.536  643.977     6.557           3.519  0.821           4.248
+Naive: median $/mile by equipment                   219.337  662.572    10.535           6.849  0.810           8.287
+
+Primary fold (train Jan-Aug, test Sep-Oct)
+                                                        mae     rmse  mape_pct  median_ape_pct     r2  clean_mape_pct
+model                                                                                                                
+FINAL: hybrid, within-day coefficient + linear ...   88.261  628.369     3.926           1.151  0.830           1.393
+Hybrid, within-day coefficient + capped drift        89.974  629.338     3.997           1.222  0.830           1.479
+Hybrid, pooled market coefficient + linear drift     93.773  630.471     4.151           1.372  0.829           1.645
+Final without quote_signal                           95.173  628.959     4.248           1.402  0.830           1.706
+Final without geography features                     94.534  629.819     4.257           1.383  0.830           1.733
+Hybrid, within-day market coefficient, no drift     111.797  634.655     4.869           2.284  0.827           2.411
+Boosting, load features only                        110.523  632.250     4.947           1.926  0.828           2.432
+Final with a single fitting round                   117.506  630.241     5.275           2.256  0.829           2.717
+Final without outlier filtering                     124.927  630.272     5.616           2.625  0.829           3.040
+Boosting + market_index + day index as tree fea...  132.166  640.102     5.726           2.808  0.824           3.264
+Naive: median $/mile by equipment                   229.097  670.660    10.487           6.801  0.807           8.071
+
+Random 5-fold (optimistic, for contrast)
+                                                        mae     rmse  mape_pct  median_ape_pct     r2  clean_mape_pct
+model                                                                                                                
+Boosting + market_index + day index, random K-fold  105.488  593.670     4.816           1.964  0.840           2.446
+Final model, random K-fold                           85.502  589.701     3.889           1.219  0.842           1.507
+
+Unseen cities
+                                                         mape_pct  clean_mape_pct
+model                      subset                                                
+With coordinate features   loads on seen cities             3.917           1.412
+                           loads touching unseen cities     4.261           1.631
+Without geography features loads on seen cities             4.273           1.780
+                           loads touching unseen cities     4.418           1.787
